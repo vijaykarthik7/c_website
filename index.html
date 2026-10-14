@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolute — The Future of Thinking | Autonomous AI Cyborg</title>
+  <meta name="description" content="An AI Assistant that works as fast as your mind, no fuss, no limits. Meet the next evolution of autonomous cognitive intelligence.">
+  
+  <!-- Modern Geometric Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-dark">
+
+  <!-- Ambient Light FX -->
+  <div class="ambient-glow" id="ambientGlow"></div>
+  <div class="subtle-grid-bg"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="topNavbar">
+    <div class="nav-container">
+      <a href="#home" class="logo" id="brandLogo">
+        <span class="logo-text">evolut<span class="logo-accent">e</span></span>
+      </a>
+
+      <nav class="nav-links" id="mainNav">
+        <a href="#home" class="nav-link active" data-nav="home">Home</a>
+        <a href="#features" class="nav-link" data-nav="features">Features</a>
+        <a href="#pricing" class="nav-link" data-nav="pricing">Pricing</a>
+        <a href="#about" class="nav-link" data-nav="about">About</a>
+        <a href="#contact" class="nav-link" data-nav="contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-try" id="tryNowBtn">Try Now</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section" id="home">
+      <div class="hero-container">
+
+        <!-- Layer 1: Giant Typographic Composition -->
+        <div class="hero-typography-layer">
+          <h1 class="hero-headline-main" id="heroHeadlineMain">- the future -</h1>
+          <div class="hero-headline-back" id="heroHeadlineBack">of thinking</div>
+        </div>
+
+        <!-- Layer 2: Center Robot 3D Figure (Pure Transparent Cutout - No Black Box) -->
+        <div class="hero-robot-stage" id="robotStage">
+          <div class="robot-halo-glow"></div>
+          
+          <!-- Robot Composition: Static Fixed Body + Dynamic Rotating Head -->
+          <div class="robot-visual-wrap" id="robotVisual">
+            <!-- Fixed Body (Never Rotates) -->
+            <div class="robot-body-layer">
+              <img src="assets/robot_body_fixed.png" alt="Evolute Static Body" class="robot-body-img">
+            </div>
+
+            <!-- Rotating Head (Pitch, Yaw, 3D Rotation Following Mouse) -->
+            <div class="robot-head-layer" id="robotHeadLayer">
+              <img src="assets/robot_head_center.png" alt="" class="robot-head-anchor" aria-hidden="true">
+              <img src="assets/robot_head_center.png" alt="Head Center" class="robot-head-img active" id="headCenter">
+              <img src="assets/robot_head_left.png" alt="Head Looking Left" class="robot-head-img" id="headLeft">
+              <img src="assets/robot_head_right.png" alt="Head Looking Right" class="robot-head-img" id="headRight">
+            </div>
+            
+            <!-- Dynamic Visor Laser Scan Overlay -->
+            <div class="visor-laser-fx" id="visorLaser"></div>
+          </div>
+        </div>
+
+        <!-- Layer 3: Left Column Content Overlay -->
+        <div class="hero-left-column">
+          <div class="rate-indicator">
+            <span class="rate-label">Our Rate</span>
+          </div>
+
+          <p class="hero-description">
+            An AI Assistant that works as fast as<br>
+            your mind, no fuss, no limits.
+          </p>
+
+          <div class="hero-tag-pills">
+            <span class="tag-pill">Technology</span>
+            <span class="tag-pill">Robot</span>
+          </div>
+
+          <div class="hero-action-buttons">
+            <button class="btn btn-read-more" id="readMoreBtn">Read More</button>
+            <button class="btn-play" id="playBtn" aria-label="Play interactive demo">
+              <span class="play-label">Play</span>
+              <span class="play-triangle">▶</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Layer 4: Right Column Content Overlay -->
+        <div class="hero-right-column">
+          <!-- Floating Accessory Gadget -->
+          <div class="gadget-pod" id="gadgetPod" title="Evolute Neural Node v2.4">
+            <img src="assets/gadget.png" alt="Evolute Neural Sensor Pod" class="gadget-img">
+            <div class="gadget-radar-wave"></div>
+            <div class="gadget-tooltip">Neural Node v2.4 <span>● Online</span></div>
+          </div>
+
+          <!-- Metrics Glass Cards -->
+          <div class="metrics-card-group">
+            <!-- Card 1: 300+ Processed Client -->
+            <div class="metric-glass-card card-clients">
+              <div class="metric-glow-bottom-edge"></div>
+              <div class="metric-top">
+                <span class="metric-number" data-count="300">300+</span>
+              </div>
+              <div class="metric-bottom">
+                <span class="metric-title">Processed<br>Client</span>
+              </div>
+            </div>
+
+            <!-- Card 2: 98% Accuracy Increase -->
+            <div class="metric-glass-card card-accuracy">
+              <div class="metric-glow-bottom-edge"></div>
+              <div class="metric-top">
+                <span class="metric-number" data-count="98">98%</span>
+              </div>
+              <div class="metric-bottom">
+                <span class="metric-title">Accuracy<br>Increase</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 2: Design & Neural Architecture Showcase -->
+    <section class="section-design" id="features">
+      <div class="section-container">
+        <div class="design-header-row">
+          <div class="design-title-group">
+            <h2 class="section-title">Design</h2>
+            <p class="section-subtitle">Engineered with aerospace carbon-titanium architecture and quantum-synaptic cognition.</p>
+          </div>
+          <a href="#specs" class="view-all-link" id="viewAllSpecsLink">
+            <span>View All</span>
+            <span class="link-arrow">→</span>
+          </a>
+        </div>
+
+        <!-- Interactive Design Grid -->
+        <div class="design-cards-grid">
+          <div class="design-feature-card">
+            <div class="card-chip">01 / ARCHITECTURE</div>
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="card-heading">Aerospace Kinetic Skeleton</h3>
+            <p class="card-text">Ultra-light monocoque titanium alloy housing 42 brushless harmonic actuators with sub-millimeter precision.</p>
+            <div class="card-spec-tag">42 DoF Motion Range</div>
+          </div>
+
+          <div class="design-feature-card featured-glow">
+            <div class="card-chip">02 / COGNITION</div>
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+            </div>
+            <h3 class="card-heading">Synaptic Cortex v4</h3>
+            <p class="card-text">500 TOPS on-device neuromorphic processor capable of processing multi-modal real-time sensor streams under 2ms.</p>
+            <div class="card-spec-tag">500 TOPS Neuromorphic</div>
+          </div>
+
+          <div class="design-feature-card">
+            <div class="card-chip">03 / SENSORY</div>
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3 class="card-heading">360° LiDAR & IR Vision</h3>
+            <p class="card-text">Omnidirectional spatial mapping with amber-band dual IR spectroscopy and millimeter wave radar telemetry.</p>
+            <div class="card-spec-tag">0.1mm Spatial Depth</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Interactive Live AI Assistant Demo -->
+    <section class="section-interactive-demo" id="about">
+      <div class="section-container">
+        <div class="demo-split">
+          <div class="demo-info">
+            <span class="sub-badge">LIVE INTERACTIVE TERMINAL</span>
+            <h2 class="demo-heading">Experience Cognition in Real Time</h2>
+            <p class="demo-desc">
+              Test Evolute's reasoning engine directly. Ask questions about autonomous flight, neural parameters, or task orchestration.
+            </p>
+            
+            <div class="prompt-chips">
+              <button class="chip-btn" data-prompt="Analyze system telemetry and core vitals.">"Analyze system vitals"</button>
+              <button class="chip-btn" data-prompt="What makes your 98% accuracy superior to standard models?">"Explain 98% accuracy"</button>
+              <button class="chip-btn" data-prompt="Engage tactical visor scanner and check surroundings.">"Engage visor scanner"</button>
+            </div>
+          </div>
+
+          <div class="demo-terminal-wrapper">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">EVOLUTE_OS // NEURAL_LINK_STATION</span>
+              <span class="terminal-status">LIVE ● 120 FPS</span>
+            </div>
+            
+            <div class="terminal-body" id="terminalOutput">
+              <div class="terminal-line system">[SYS_INIT]: Evolute Neural Assistant v4.8 linked.</div>
+              <div class="terminal-line system">[STATUS]: Synaptic Core operational. 500 TOPS ready.</div>
+              <div class="terminal-line bot">[EVOLUTE]: Greetings. I am your autonomous intelligence partner. What mission shall we execute today?</div>
+            </div>
+
+            <form class="terminal-input-bar" id="terminalForm">
+              <span class="terminal-prompt-symbol">&gt;</span>
+              <input type="text" id="terminalInput" placeholder="Type a directive or question..." autocomplete="off">
+              <button type="submit" class="terminal-send-btn">Execute</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Specifications & Pricing -->
+    <section class="section-pricing" id="pricing">
+      <div class="section-container">
+        <div class="center-header">
+          <span class="sub-badge">DEPLOYMENT TIERS</span>
+          <h2 class="section-title">Scalable Autonomous Fleet</h2>
+          <p class="section-subtitle">Tailored for research labs, advanced robotics automation, and enterprise operations.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Tier 1 -->
+          <div class="pricing-card">
+            <div class="tier-name">Developer Core</div>
+            <div class="tier-price">$2,400<span class="period">/mo</span></div>
+            <p class="tier-desc">Full API SDK access and local neural simulator environment.</p>
+            <ul class="tier-features">
+              <li>✓ Cloud Neural Telemetry API</li>
+              <li>✓ Sub-10ms Inference Stream</li>
+              <li>✓ Up to 5 Virtual Simulation Nodes</li>
+              <li>✓ Community Support & Docs</li>
+            </ul>
+            <button class="btn btn-tier">Deploy Node</button>
+          </div>
+
+          <!-- Tier 2 (Highlighted) -->
+          <div class="pricing-card tier-pro-highlight">
+            <div class="tier-badge-glow">MOST POPULAR</div>
+            <div class="tier-name">Enterprise Fleet</div>
+            <div class="tier-price">$8,900<span class="period">/mo</span></div>
+            <p class="tier-desc">Complete autonomous hardware unit with on-premise synaptic cluster.</p>
+            <ul class="tier-features">
+              <li>✓ 1x Evolute Physical Humanoid Unit</li>
+              <li>✓ 500 TOPS Dedicated On-device Core</li>
+              <li>✓ 360° LiDAR & Multi-Spectral Pod</li>
+              <li>✓ 98% Benchmark Guaranteed SLA</li>
+              <li>✓ Dedicated 24/7 Cognitive Support</li>
+            </ul>
+            <button class="btn btn-tier active">Deploy Fleet</button>
+          </div>
+
+          <!-- Tier 3 -->
+          <div class="pricing-card">
+            <div class="tier-name">Autonomous Defense</div>
+            <div class="tier-price">Custom</div>
+            <p class="tier-desc">Custom hardened titanium alloy construction for mission-critical deployments.</p>
+            <ul class="tier-features">
+              <li>✓ Unlimited Swarm Orchestration</li>
+              <li>✓ Zero-Knowledge Air-gapped Mesh</li>
+              <li>✓ Custom Sensor Payloads</li>
+              <li>✓ Dedicated Engineering Team</li>
+            </ul>
+            <button class="btn btn-tier">Contact Defense</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Newsletter Section -->
+    <section class="section-contact" id="contact">
+      <div class="section-container">
+        <div class="contact-box">
+          <div class="contact-content">
+            <h2 class="contact-title">Ready to shape the future of thinking?</h2>
+            <p class="contact-text">Join 300+ frontier enterprises leveraging Evolute cognitive robotics.</p>
+          </div>
+          <form class="subscribe-form" id="subscribeForm">
+            <input type="email" placeholder="Enter corporate email..." required class="sub-input" id="subEmail">
+            <button type="submit" class="btn btn-try">Request Access</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-text">evolut<span class="logo-accent">e</span></span>
+          </a>
+          <p class="footer-tagline">Autonomous Cognitive Systems Inc. Built for human-level collaboration.</p>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-col">
+            <span class="footer-col-title">Product</span>
+            <a href="#features">Neural Core</a>
+            <a href="#features">Kinetic Frame</a>
+            <a href="#specs">Specifications</a>
+            <a href="#pricing">Fleet Pricing</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Company</span>
+            <a href="#about">About</a>
+            <a href="#about">Careers</a>
+            <a href="#contact">Press Kit</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Telemetry</span>
+            <div class="system-status">
+              <span class="status-indicator-green"></span>
+              <span>All Systems Nominal</span>
+            </div>
+            <span class="latency-stat">Latency: 1.8ms | Accuracy: 98.4%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Evolute Robotics Inc. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+          <a href="#security">Quantum Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Video / Hologram Modal -->
+  <div class="modal-backdrop" id="demoModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <div class="modal-video-box">
+        <div class="hud-scanner-overlay">
+          <div class="hud-reticle"></div>
+          <div class="hud-readout">EVOLUTE COGNITIVE MATRIX v4.8 — STREAM ACTIVE</div>
+        </div>
+        <img src="assets/robot.jpg" alt="Autonomous Demonstration" class="modal-poster">
+        <div class="modal-audio-bars">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+        <p class="modal-caption">"Synthesizing autonomous neural pathway across 300+ connected client nodes."</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
